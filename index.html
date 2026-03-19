@@ -11,26 +11,31 @@
 
 
 <body>
-
   <h2>Visualisation de uniqueNotInPlace(arr) — Version Grid</h2>
 
-  <div id="sidebar">
+  <nav id="sidebar" aria-label="Étapes">
     <div id="sidebar-header">
       <h3>Étapes</h3>
     </div>
     <div id="log-container"></div>
-  </div>
+  </nav>
 
-  <div id="array"></div>
+  <main id="main">
+    <section id="array-section">
+      <div id="array"></div>
+    </section>
+    <div class="controls">
+      <button id="start">Lancer l'animation</button>
+      <button id="next-step">Étape suivante</button>
+    </div>
 
-  <h3>Résultat (non in place)</h3>
-  <div id="result"></div>
+    <section id="result-section">
+      <h3>Résultat (non in place)</h3>
+      <div id="result"></div>
+    </section>
 
 
-  <button id="start">Lancer l'animation</button>
-  <button id="next-step">Étape suivante</button>
-
-
+  </main>
 
 </body>
 
