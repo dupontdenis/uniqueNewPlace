@@ -1,0 +1,117 @@
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    #array {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+      gap: 10px;
+      margin-bottom: 20px;
+      max-width: 400px;
+    }
+
+    .cell {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .i {
+      background-color: #4da3ff;
+      color: white;
+      border-color: #005bbb;
+    }
+
+    .j {
+      background-color: #ff9f43;
+      color: white;
+      border-color: #cc6e00;
+    }
+
+    .removed {
+      background-color: #ff4d4d;
+      color: white;
+      border-color: darkred;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    #sidebar {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 300px;
+      height: 100vh;
+      background: #fafafa;
+      border-left: 2px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+
+    #sidebar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background: #eee;
+      border-bottom: 1px solid #ccc;
+    }
+
+    #log-container {
+      padding: 15px;
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+
+    .log-entry {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .log-info {
+      border-left: 4px solid #007bff;
+    }
+
+    .log-compare {
+      border-left: 4px solid #ff9800;
+    }
+
+    .log-delete {
+      border-left: 4px solid #e53935;
+    }
+
+    .log-success {
+      border-left: 4px solid #43a047;
+    }
+
+    #result {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 50px;
+      /* largeur fixe pour chaque cellule */
+      gap: 2px
+      /* pas d’espace entre les cellules */
+      border: 2px solid #333;
+    }
+
+    .result-cell {
+      border: 1px solid #333;
+      text-align: center;
+      background: #dff0d8;
+      font-weight: bold;
+    }
