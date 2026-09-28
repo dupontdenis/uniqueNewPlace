@@ -25,7 +25,7 @@ btnStart.addEventListener("click", async () => {
     const s = first.value;
     renderArray(arrayContainer, s.arr);
     renderResult(resultContainer, s.result);
-    logger.info("Algorithme initialisé");
+    logger.start("Algorithme initialisé");
   }
 });
 
@@ -57,7 +57,7 @@ btnNext.addEventListener("click", () => {
       break;
 
     case "end":
-      logger.success(s.message);
+      logger.end(s.message);
       renderArray(arrayContainer, s.arr);
       renderResult(resultContainer, s.result);
       break;

@@ -1,6 +1,7 @@
 export function* uniqueNotInPlaceStep(arr) {
   const result = [];
 
+  console.log("start");
   yield { type: "start", arr: [...arr], result: [...result] };
 
   for (let i = 0; i < arr.length; i++) {

@@ -15,10 +15,12 @@ export function createLogger(sidebar) {
   }
 
   return {
+    start: (msg) => add(msg, "log-start"),
     info: (msg) => add(msg, "log-info"),
     compare: (msg) => add(msg, "log-compare"),
     delete: (msg) => add(msg, "log-delete"),
     success: (msg) => add(msg, "log-success"),
+    end: (msg) => add(msg, "log-end"),
     clear,
   };
 }
